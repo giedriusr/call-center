@@ -1,16 +1,9 @@
-class CallCenter
-  attr_accessor :avg_waiting_time, :avg_serving_time, :simulation_time, :queue,
-               :callers, :agents
+require File.expand_path('/app/agent.rb', __FILE__)
+require File.expand_path('/app/caller.rb', __FILE__)
+require File.expand_path('/app/call_center.rb', __FILE__)
 
-  def initialize(callers, agents, time_in_minutes)
-    @callers = callers
-    @agents = agents
-    @simulation_time = time_in_minutes
-    @queue = []
-    @avg_waiting_time = 0
-    @avg_serving_time = 0
-  end
+call_center = CallCenter.new
+call_center.run
 
-  def run
-  end
-end
+puts "Average waiting time: #{call_center.avg_waiting_time}\n"
+puts "Average serving time: #{avg_serving_time}"

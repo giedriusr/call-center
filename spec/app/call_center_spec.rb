@@ -1,4 +1,4 @@
-require File.expand_path('../../app.rb', __FILE__)
+require File.expand_path('../../../app/call_center.rb', __FILE__)
 
 RSpec.describe CallCenter do
   describe 'Initialization of call center object' do
