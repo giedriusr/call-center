@@ -1,4 +1,4 @@
-require File.expand_path('../../app/caller.rb', __FILE__)
+require File.expand_path('../../../app/caller.rb', __FILE__)
 
 RSpec.describe Caller do
   describe 'object creation' do
