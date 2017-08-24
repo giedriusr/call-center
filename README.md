@@ -6,4 +6,5 @@ $ bundle
 $ ruby app.rb
 
 # run the specs
+$ bundle exec rspec
 ```
