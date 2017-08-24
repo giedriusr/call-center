@@ -10,4 +10,8 @@ class Caller < Person
     @call_at = call_at_minute
     @waited_for = 0
   end
+
+  def update_waiting_time(minute)
+    @waited_for = minute - call_at
+  end
 end

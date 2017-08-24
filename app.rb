@@ -1,4 +1,5 @@
 require 'faker'
+require 'byebug'
 
 require File.expand_path('../app/agent.rb', __FILE__)
 require File.expand_path('../app/caller.rb', __FILE__)
